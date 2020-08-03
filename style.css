@@ -1,0 +1,151 @@
+body {
+  background: #8a54ed;
+}
+
+h6 {
+  color: #7c9eb2;
+}
+
+a {
+  color: #9fc8e0;
+}
+
+a:hover {
+  color: #b2def7;
+  text-decoration: none;
+}
+
+a:focus { 
+    outline: none; 
+}
+
+span {
+  font-size: 10px;
+  padding-left: 10px;
+  color: #ec4c39;
+}
+
+.chip {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.row-top {
+  background: #6441a4;
+}
+
+.row-top>img {
+  margin: 0 auto;
+  height: 150px;
+}
+
+.row-head {
+  background: #231123;
+}
+
+/* Search Input CSS */
+
+.input-group {
+  width: 300px;
+  margin: 30px auto;
+  border-radius: 50px;
+}
+
+.input-group:hover,
+.input-group:focus,
+.input-group:active {
+  width: 500px;
+  transition: width ease-in-out .7s,box-shadow ease-in-out .7s;
+  border: 1px solid #fff;
+}
+
+.input-group-addon {
+  color: #7c9eb2;
+  background: #372554;
+  border-radius: 0 50px 50px 0;
+  border: none;
+}
+
+input#search {
+  background: #372554;
+  border-radius: 50px 0 0 50px;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+}
+
+/* end Search Input CSS */
+
+/* Bootstrap Navs Tabs Override CSS */
+.nav-tabs {
+  margin: 10px auto;
+  padding-bottom: 30px;
+  border-bottom: none;
+}
+
+.nav-item {
+  margin: 0 40px 0 40px;
+}
+
+.nav-link {
+  border: none !important;
+  border-bottom: 2px solid #7c9eb2 !important;
+  color: #7c9eb2;
+  width: 90px;
+  text-align: center;
+}
+
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+  background: transparent !important;
+  border-bottom: 2px solid #6441a4 !important;
+  color: #6441a4 !important;
+}
+/* end Bootstrap Navs Tabs Override CSS */
+
+.row-body {
+  background: #372554;
+  padding: 20px;
+  color: #7c9eb2;
+}
+
+.tab-pane {
+  padding-top: 10px;
+}
+
+.tab-pane>.row {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 2px solid #533189;
+}
+.tab-pane>.row:hover {
+  background: #533189;
+}
+
+.tab-pane img {
+  height: 70px;
+  border-radius: 25px;
+}
+
+.circle,
+.circle-active{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #6441a4;
+  margin-top: 3px;
+}
+
+.circle {
+  background: #7c9eb2;
+}
+
+.circle-active {
+  background: #54bf58;
+}
+
+.tab-content {
+  width: 100% !important;
+}

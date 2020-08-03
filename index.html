@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>FGC PROYECTO</title>
+    <link rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link rel='stylesheet'
+      href='https://use.fontawesome.com/releases/v5.0.2/css/all.css'><link
+      rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <body class="container-fluid">
+      <!-- Twitch.tv App Chip -->
+      <div class="chip">
+
+        <!-- Logo Row -->
+        <div class="row row-top">
+          <img
+            src="https://www.twitch.tv/p/assets/uploads/combologo_474x356.png"
+            alt="Twitch.tv logo">
+        </div> <!-- end Logo Row -->
+
+        <!-- Search Input -->
+        <div class="row row-head">
+          <div class="input-group">
+            <input id="search" type="text" class="form-control">
+            <span class="input-group-addon">
+              <i class="fa fa-search"></i>
+            </span>
+          </div>
+        </div> <!-- end Search Input -->
+
+        <!-- Nav tabs -->
+        <div class="row row-head">
+          <ul class="nav nav-tabs" role="tablist" id="twitchTabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#all">ALL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#online">ONLINE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#offline">OFFLINE</a>
+            </li>
+          </ul>
+        </div> <!-- end Nav tabs -->
+
+        <!-- Tab panes -->
+        <div class="row row-body">
+          <div class="tab-content">
+
+            <!-- ALL Tab Pane - To be populated -->
+            <div id="all" class="container tab-pane active">
+            </div> <!-- end ALL Tab Pane -->
+
+            <!-- ONLINE Tab Pane - To be populated -->
+            <div id="online" class="container tab-pane fade">
+            </div> <!-- end ONLINE Tab Pane -->
+
+            <!-- OFFLINE Tab Pane - To be populated -->
+            <div id="offline" class="container tab-pane fade">
+            </div>
+          </div> <!-- end OFFLINE Tab Pane -->
+
+        </div> <!-- end Tab panes -->
+
+      </div> <!-- end Twitch.tv App Chip -->
+    </body>
+    <!-- partial -->
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js'></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script><script
+      src="./script.js"></script>
+
+  </body>
+</html>
