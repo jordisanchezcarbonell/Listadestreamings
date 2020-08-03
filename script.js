@@ -38,12 +38,13 @@ $(document).ready(function() {
   /* List of Streamers */
   const streamers = [
     "bcnfighters",
-    "alexelcapo",
     "Sacred_Azure",
     "lisdexico",
     "gambatiubo",
     "jaorcas",
     "blueken",
+    "lgr777",
+    "faisaldante",
   ];
   let api = "";
   var apiChannelData = "";
