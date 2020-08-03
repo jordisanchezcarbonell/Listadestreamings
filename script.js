@@ -53,6 +53,7 @@ $(document).ready(function() {
     "apiChannelData",
     "bazoukha2x",
     "2XBCN",
+    "Chottin",
   ];
   let api = "";
   var apiChannelData = [];
