@@ -30,6 +30,7 @@ $(document).ready(function() {
         );
     });
   });
+
   /*  END Search Streamer Function */
 
   /* Populate Streamer
@@ -64,8 +65,22 @@ $(document).ready(function() {
     "byJacka",
     "saanchuck",
     "tomylebeau",
+    "monoborracho",
+    "lmaoncio",
+    "caipermg",
+    "sentinelatekken",
+    "RockShooter95",
   ];
   let api = "";
+  var contadorelemento = document.getElementById("contador");
+  var contadoronline = document.getElementById("contadorONLINE");
+  var contadoroffline = document.getElementById("contadorOFFLINE");
+  var contadortotalonlne = 0;
+  var contadorofline = 0;
+
+  if (contadorelemento) {
+    contadorelemento.innerHTML = streamers.length;
+  }
   var apiChannelData = [];
   /* Iterating thru list */
   streamers.forEach((streamer, index) => {
@@ -104,6 +119,8 @@ $(document).ready(function() {
 
             /* If Streamer is Online */
             if (resp.data[0].is_live != false) {
+              contadortotalonlne++;
+
               htmlContent +=
                 "<h5>" +
                 resp.data[0].display_name +
@@ -115,6 +132,8 @@ $(document).ready(function() {
               $("#online").append(htmlContent);
               $("#all").append(htmlContent);
             } else {
+              contadorofline++;
+
               /* If Streamer is Offline */
               htmlContent +=
                 "<h5>" +
@@ -124,6 +143,12 @@ $(document).ready(function() {
                 "</h6></div><div class='col-2'><div class='circle'></div></div></div>";
               $("#offline").append(htmlContent);
               $("#all").append(htmlContent);
+            }
+            if (contadoronline) {
+              contadoronline.innerHTML = contadortotalonlne;
+            }
+            if (contadoroffline) {
+              contadoroffline.innerHTML = contadorofline;
             }
           })
           .catch((err) => {
