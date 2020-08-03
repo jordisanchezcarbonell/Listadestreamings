@@ -62,6 +62,8 @@ $(document).ready(function() {
     "saanchuck",
     "kaiserxavier",
     "byJacka",
+    "saanchuck",
+    "tomylebeau",
   ];
   let api = "";
   var apiChannelData = [];
