@@ -15,8 +15,8 @@ a:hover {
   text-decoration: none;
 }
 
-a:focus { 
-    outline: none; 
+a:focus {
+  outline: none;
 }
 
 span {
@@ -56,7 +56,7 @@ span {
 .input-group:focus,
 .input-group:active {
   width: 500px;
-  transition: width ease-in-out .7s,box-shadow ease-in-out .7s;
+  transition: width ease-in-out .7s, box-shadow ease-in-out .7s;
   border: 1px solid #fff;
 }
 
@@ -103,6 +103,7 @@ input#search {
   border-bottom: 2px solid #6441a4 !important;
   color: #6441a4 !important;
 }
+
 /* end Bootstrap Navs Tabs Override CSS */
 
 .row-body {
@@ -120,6 +121,7 @@ input#search {
   padding-top: 20px;
   border-bottom: 2px solid #533189;
 }
+
 .tab-pane>.row:hover {
   background: #533189;
 }
@@ -130,7 +132,7 @@ input#search {
 }
 
 .circle,
-.circle-active{
+.circle-active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -148,4 +150,14 @@ input#search {
 
 .tab-content {
   width: 100% !important;
+}
+
+
+.row-bot {
+  background: transparent;
+}
+
+.row-bot>img {
+  margin: 0 auto;
+  height: 150px;
 }

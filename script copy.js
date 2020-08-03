@@ -71,50 +71,51 @@ $(document).ready(function() {
         return resp.json();
       })
       .then((resp) => {
-        fetch("https://api.twitch.tv/helix/games?id=" + resp.data[0].game_id, {
-          headers: {
-            "Client-ID": "wiigcdymn306y0db5x29f8do8o60ho",
-            Accept: "application/vnd.twitchtv.v5+json",
-            Authorization: "Bearer twf2yfqq6qgl1l5heghz6b3nz57zcz",
-          },
-        })
+        apiChannelData = resp.data;
+        console.log(apiChannelData);
+
+        var htmlContent =
+          "<div class='row'><div class='col-2'><img src='" +
+          apiChannelData[0].thumbnail_url +
+          "'></div><div class='col-8'><a target='_blank' href='" +
+          "http://twitch.tv/" +
+          apiChannelData[0].display_name.toLowerCase() +
+          "'>";
+
+        /* If Streamer is Online */
+        if (apiChannelData[0].is_live != false) {
+          htmlContent +=
+            "<h5>" +
+            apiChannelData[0].display_name +
+            "<span>LIVE</span></h5> <h5>PRUEBA</h5></a><h6>Streaming: " +
+            apiChannelData[0].is_live +
+            "</h6></div><div class='col-2'><div class='circle-active'></div></div></div>";
+          $("#online").append(htmlContent);
+          $("#all").append(htmlContent);
+        } else {
+          /* If Streamer is Offline */
+          htmlContent +=
+            "<h5>" +
+            apiChannelData[0].display_name +
+            "</h5></a><h6>Last Stream: " +
+            apiChannelData[0].is_live +
+            "</h6></div><div class='col-2'><div class='circle'></div></div></div>";
+          $("#offline").append(htmlContent);
+          $("#all").append(htmlContent);
+        }
+        fetch(
+          "https://api.twitch.tv/helix/games?id=" + apiChannelData[0].game_id,
+          {
+            headers: {
+              "Client-ID": "wiigcdymn306y0db5x29f8do8o60ho",
+              Accept: "application/vnd.twitchtv.v5+json",
+              Authorization: "Bearer twf2yfqq6qgl1l5heghz6b3nz57zcz",
+            },
+          }
+        )
           .then((response) => response.json())
           .then((json) => {
-            console.log(resp.data[0]);
-
             console.log(json.data[0].name);
-
-            var htmlContent =
-              "<div class='row'><div class='col-2'><img src='" +
-              resp.data[0].thumbnail_url +
-              "'></div><div class='col-8'><a target='_blank' href='" +
-              "http://twitch.tv/" +
-              resp.data[0].display_name.toLowerCase() +
-              "'>";
-
-            /* If Streamer is Online */
-            if (resp.data[0].is_live != false) {
-              htmlContent +=
-                "<h5>" +
-                resp.data[0].display_name +
-                "<span>LIVE</span></h5> <h6>" +
-                json.data[0].name +
-                "</h6></a><h6>Streaming: " +
-                resp.data[0].is_live +
-                "</h6></div><div class='col-2'><div class='circle-active'></div></div></div>";
-              $("#online").append(htmlContent);
-              $("#all").append(htmlContent);
-            } else {
-              /* If Streamer is Offline */
-              htmlContent +=
-                "<h5>" +
-                resp.data[0].display_name +
-                "</h5></a><h6>Last Stream: " +
-                resp.data[0].is_live +
-                "</h6></div><div class='col-2'><div class='circle'></div></div></div>";
-              $("#offline").append(htmlContent);
-              $("#all").append(htmlContent);
-            }
           })
           .catch((err) => {
             console.log(err);
