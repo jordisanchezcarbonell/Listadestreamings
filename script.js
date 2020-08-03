@@ -50,9 +50,12 @@ $(document).ready(function() {
     "rimperk1",
     "Thalandyr",
     "shanksfgc",
+    "apiChannelData",
+    "bazoukha2x",
+    "2XBCN",
   ];
   let api = "";
-  var apiChannelData = "";
+  var apiChannelData = [];
   /* Iterating thru list */
   streamers.forEach((streamer) => {
     api = fetch(
@@ -80,10 +83,6 @@ $(document).ready(function() {
         })
           .then((response) => response.json())
           .then((json) => {
-            console.log(resp.data.sort());
-
-            console.log(json.data[0].name);
-
             var htmlContent =
               "<div class='row'><div class='col-2'><img src='" +
               resp.data[0].thumbnail_url +
@@ -123,42 +122,7 @@ $(document).ready(function() {
       .catch((err) => {
         console.log(err);
       });
-
-    /* Getting Stream and Channel Data of each Twitch 
-       User
-    $.when(apiChannelData).done(function(channelData, streamData) {
-      console.log(apiChannelData);
-      var htmlContent =
-        "<div class='row'><div class='col-2'><img src='" +
-        apiChannelData[0].thumbnail_url +
-        "'></div><div class='col-8'><a target='_blank' href='" +
-        "http://twitch.tv/" +
-        resp.data[0].display_name.toLowerCase();
-      +"'>";
-
-      /* If Streamer is Online 
-      if (streamData[0].stream != null) {
-        htmlContent +=
-          "<h5>" +
-          channelData[0].display_name +
-          "<span>LIVE</span></h5></a><h6>Streaming: " +
-          channelData[0].is_live +
-          "</h6></div><div class='col-2'><div class='circle-active'></div></div></div>";
-        $("#online").append(htmlContent);
-        $("#all").append(htmlContent);
-      } else {
-        /* If Streamer is Offline 
-        htmlContent +=
-          "<h5>" +
-          channelData[0].display_name +
-          "</h5></a><h6>Last Stream: " +
-          channelData[0].is_live +
-          "</h6></div><div class='col-2'><div class='circle'></div></div></div>";
-        $("#offline").append(htmlContent);
-        $("#all").append(htmlContent);
-      }
-    });
-    */
   });
+
   /* END Populate Streamer */
 });
