@@ -50,19 +50,23 @@ $(document).ready(function() {
     "rimperk1",
     "Thalandyr",
     "shanksfgc",
-    "apiChannelData",
     "bazoukha2x",
     "2XBCN",
     "Chottin",
     "juanmanova2",
     "rivarsal",
     "jade_fg",
+    "adrianfgc",
+    "abyz_dk",
+    "unoquepasa",
+    "saanchuck",
+    "kaiserxavier",
   ];
   let api = "";
   var apiChannelData = [];
   /* Iterating thru list */
-  streamers.forEach((streamer) => {
-    api = fetch(
+  streamers.forEach((streamer, index) => {
+    fetch(
       "https://api.twitch.tv/helix/search/channels?query=" +
         streamer +
         "&token=twf2yfqq6qgl1l5heghz6b3nz57zcz",
@@ -78,6 +82,8 @@ $(document).ready(function() {
         return resp.json();
       })
       .then((resp) => {
+       
+
         fetch("https://api.twitch.tv/helix/games?id=" + resp.data[0].game_id, {
           headers: {
             "Client-ID": "wiigcdymn306y0db5x29f8do8o60ho",
