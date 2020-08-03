@@ -54,6 +54,9 @@ $(document).ready(function() {
     "bazoukha2x",
     "2XBCN",
     "Chottin",
+    "juanmanova2",
+    "rivarsal",
+    "jade_fg",
   ];
   let api = "";
   var apiChannelData = [];
