@@ -80,7 +80,7 @@ $(document).ready(function() {
         })
           .then((response) => response.json())
           .then((json) => {
-            console.log(resp.data[0]);
+            console.log(resp.data.sort());
 
             console.log(json.data[0].name);
 
@@ -99,8 +99,8 @@ $(document).ready(function() {
                 resp.data[0].display_name +
                 "<span>LIVE</span></h5> <h6>" +
                 json.data[0].name +
-                "</h6></a><h6>Streaming: " +
-                resp.data[0].is_live +
+                "</h6></a><h6>Title: " +
+                resp.data[0].title +
                 "</h6></div><div class='col-2'><div class='circle-active'></div></div></div>";
               $("#online").append(htmlContent);
               $("#all").append(htmlContent);
