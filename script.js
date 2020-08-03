@@ -61,6 +61,7 @@ $(document).ready(function() {
     "unoquepasa",
     "saanchuck",
     "kaiserxavier",
+    "byJacka",
   ];
   let api = "";
   var apiChannelData = [];
@@ -82,8 +83,6 @@ $(document).ready(function() {
         return resp.json();
       })
       .then((resp) => {
-       
-
         fetch("https://api.twitch.tv/helix/games?id=" + resp.data[0].game_id, {
           headers: {
             "Client-ID": "wiigcdymn306y0db5x29f8do8o60ho",
