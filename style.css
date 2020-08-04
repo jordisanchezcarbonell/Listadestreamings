@@ -26,7 +26,7 @@ span {
 }
 
 .chip {
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
   margin-bottom: 60px;
 }
@@ -169,4 +169,36 @@ input#search {
 .row-entrante>img {
   margin: 0 auto;
   height: 88px;
+}
+
+
+.input-group-addon-anime {
+  color: #7c9eb2;
+  border-radius: 0 50px 50px 0;
+  border: none;
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+
+.solotabs {
+  margin: 2px auto;
+  padding-bottom: 30px;
+  border-bottom: none;
+}
+
+.centrarelemento {
+  text-align: center;
+}
+
+.videocentrado {
+  margin-bottom: 1vw;
+  margin-top: 2vw;
+}
+
+.pruebavideonuevo {
+  margin-left: 10vw;
+}
+
+.paraellogodetwitter {
+  margin-left: 3vw;
 }

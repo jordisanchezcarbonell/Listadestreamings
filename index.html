@@ -11,9 +11,10 @@
 
   gtag('config', 'UA-174310995-1');
 </script>
-
     <meta charset="UTF-8">
     <title>FGC STREAM</title>
+    <script type="text/javascript"
+      src="//cdn.jsdelivr.net/afterglow/latest/afterglow.min.js"></script>
     <link rel='stylesheet'
       href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
     <link rel='stylesheet'
@@ -35,7 +36,6 @@
             alt="Twitch.tv logo">
 
         </div> <!-- end Logo Row -->
-        <!-- Logo Row -->
 
         <!-- Search Input -->
         <div class="row row-head">
@@ -43,7 +43,9 @@
             <input id="search" type="text" class="form-control">
             <span class="input-group-addon">
               <i class="fa fa-search"></i>
+
             </span>
+
           </div>
         </div> <!-- end Search Input -->
 
@@ -51,31 +53,85 @@
         <div class="row row-head">
           <ul class="nav nav-tabs" role="tablist" id="twitchTabs">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#all">ALL</a>
+              <a class="nav-link" data-toggle="tab" href="#all">ALL <p
+                  id="contador"></p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#online">ONLINE</a>
+              <a class="nav-link active" data-toggle="tab" href="#online">ONLINE
+                <p
+                  id="contadorONLINE"></p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#offline">OFFLINE</a>
+              <a class="nav-link" data-toggle="tab" href="#offline">OFFLINE <p
+                  id="contadorOFFLINE"></p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#newupdates">New
+                updates
+                <p
+                  id="contadorOFFLINE"></p></a>
             </li>
           </ul>
+          <div class="row row-entrante">
+            <img
+              src="./AnimEVO_no_waifu.png"
+              alt="Twitch.tv logo">
+
+          </div>
+          <li class="nav-item solotabs">
+
+            <a class="nav-link disabled" id="demo" href=""> </a>
+
+          </li>
+
         </div> <!-- end Nav tabs -->
+
 
         <!-- Tab panes -->
         <div class="row row-body">
           <div class="tab-content">
 
             <!-- ALL Tab Pane - To be populated -->
-            <div id="all" class="container tab-pane active">
+            <div id="all" class="container tab-pane fade">
             </div> <!-- end ALL Tab Pane -->
 
             <!-- ONLINE Tab Pane - To be populated -->
-            <div id="online" class="container tab-pane fade">
+            <div id="online" class="container tab-pane active">
             </div> <!-- end ONLINE Tab Pane -->
 
             <!-- OFFLINE Tab Pane - To be populated -->
             <div id="offline" class="container tab-pane fade">
+            </div>
+            <div id="newupdates" class="container tab-pane fade">
+              <h5>Apartado donde indicaremos nuevas propuestas nuevos updates de
+                la web</h5>
+              <ol>
+                <li>Ordenacion de los nombres elementos</li>
+                <li>Aplicacion para movil</li>
+                <li>Crear form para guardar los usuarios en una BD</li>
+                <li>Migrar Proyecto</li>
+                <li> Sugerencias Twitter</li>
+              </ol>
+
+
+              <div class="centrarelemento">
+                <h4>Extension para Opera o Chrome</h4>
+                <video class="afterglow pruebavideonuevo videocentrado"
+                  id="myvideo"
+                  width="640" height="480">
+                  <source type="video/mp4" src="./tutorial.mp4" />
+                </video>
+              </div>
+              <div style="text-align:center;">
+                <a href="./FGCStreamEX.zip" target="_blank" download="Extension
+                  Opera">
+                  <i class="fas fa-download"></i>
+                  Descargar Archivo
+                </a>
+
+
+              </div>
+
             </div>
           </div> <!-- end OFFLINE Tab Pane -->
 
@@ -95,6 +151,9 @@
         </a>
 
       </div>
+
+      <p id=""></p>
+
     </footer>
     <!-- partial -->
     <script
