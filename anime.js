@@ -122,7 +122,9 @@ $(document).ready(function() {
                 json.data[0].name +
                 "</h6></a><h6>Title: " +
                 resp.data[0].title +
-                "</h6></div><div class='col-2'><div class='circle-active'></div></div></div>";
+                "</h6></div><div class='col-2 margenesaautodivEvo'> <div class='circle-active'> <a href='https://twitter.com/intent/tweet?text=Estoy%20viendo%20a%20http://twitch.tv/" +
+                resp.data[0].display_name.toLowerCase() +
+                "' target='_blank' class='paraellogodetwitter'><i class='fab fa-twitter fa-2x'></i>            </a></div>    </div> </div> ";
               $("#online").append(htmlContent);
               $("#all").append(htmlContent);
             } else {
@@ -134,7 +136,7 @@ $(document).ready(function() {
                 resp.data[0].display_name +
                 "</h5></a><h6>Last Stream: " +
                 resp.data[0].is_live +
-                "</h6></div><div class='col-2'><div class='circle'></div></div></div>";
+                "</h6></div><div class='col-2 margenesaautodivEvo'><div class='circle'></div></div></div>";
               $("#offline").append(htmlContent);
               $("#all").append(htmlContent);
             }

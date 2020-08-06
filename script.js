@@ -144,7 +144,7 @@ $(document).ready(function() {
                 json.data[0].name +
                 "</h6></a><h6>Title: " +
                 resp.data[0].title +
-                "</h6></div><div class='col-2'> <div class='circle-active'> <a href='https://twitter.com/intent/tweet?text=Estoy%20viendo%20a%20http://twitch.tv/" +
+                "</h6></div><div class='col-2 margenesaautodiv'> <div class='circle-active'> <a href='https://twitter.com/intent/tweet?text=Estoy%20viendo%20a%20http://twitch.tv/" +
                 resp.data[0].display_name.toLowerCase() +
                 "' target='_blank' class='paraellogodetwitter'><i class='fab fa-twitter fa-2x'></i>            </a></div>    </div> </div> ";
               $("#online").append(htmlContent);
@@ -205,7 +205,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "NEW EVENT";
+    document.getElementById("demo").innerHTML = "AnimeEvo";
     document.getElementById("demo").href = "./animeEvo.html";
   }
 }, 1000);

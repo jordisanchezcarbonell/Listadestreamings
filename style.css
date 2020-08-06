@@ -36,7 +36,7 @@ span {
 }
 
 .row-top>img {
-  margin: 0 auto;
+  margin: 3vw auto;
   height: 150px;
 }
 
@@ -181,7 +181,7 @@ input#search {
 }
 
 .solotabs {
-  margin: 2px auto;
+  margin: auto auto;
   padding-bottom: 30px;
   border-bottom: none;
 }
@@ -201,4 +201,154 @@ input#search {
 
 .paraellogodetwitter {
   margin-left: 3vw;
+}
+
+.newupdatesmargen {
+  margin-bottom: 1.7vw;
+
+}
+
+.newupdatesmargenEvo {
+  margin-bottom: 2.9vw;
+
+}
+
+.centrarltemporizador {
+  margin-top: -1vw;
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .paraellogodetwitter {
+    margin-left: 15vw;
+  }
+
+  .fa-2x {
+    font-size: 4em;
+  }
+
+  .oculto {
+    display: none;
+  }
+
+  .textoresponsive {
+    font-size: 2rem;
+  }
+
+  .row-top>img {
+    margin: 0 auto;
+    height: 300px;
+  }
+
+  .newupdatesmargen {
+    margin-bottom: 8.7vw;
+  }
+
+  .newupdatesmargenEvo {
+    margin-bottom: 8.7vw;
+  }
+
+  .margenestitulo {
+    margin-top: 3.7vw;
+  }
+
+  h5 {
+    font-size: 3.25rem;
+  }
+
+  h4 {
+    font-size: 3.25rem;
+  }
+
+  h6 {
+    font-size: 3.25rem;
+  }
+
+  span {
+    font-size: 3.25rem;
+  }
+
+  p {
+    font-size: 2.25rem;
+  }
+
+  .row-bot>img {
+    margin: 0 auto;
+    height: 300px;
+  }
+
+  .circle,
+  .circle-active {
+    width: 82px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #6441a4;
+    margin-top: 3px;
+  }
+
+  .tamañoiconobuscador {
+    font-size: 4vw;
+
+  }
+
+  .tamañonavbarra {
+    width: auto;
+  }
+
+  .margenesaautodiv {
+    margin: auto -5vw;
+  }
+
+  .margenesaautodivEvo {
+    margin: 6vw -1vw;
+  }
+
+  .fa-2x {
+    font-size: 5em;
+  }
+
+  .row-top>img {
+    margin: 6vw auto;
+    height: 344px;
+  }
+
+  .cld-datetime .today {
+    font-size: 3rem;
+  }
+
+  .tabla {
+    width: 100%;
+  }
+
+  .cld-label {
+    font-size: 2rem;
+  }
+
+  .cld-ttle {
+
+    font-size: 2rem;
+  }
+
+
+  .prueba {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: -3vw;
+    margin-bottom: 6vw;
+  }
+
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .paraellogodetwitter {
+    margin-left: 5vw;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .paraellogodetwitter {
+    margin-left: 5vw;
+  }
 }

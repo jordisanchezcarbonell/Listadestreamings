@@ -40,9 +40,9 @@
         <!-- Search Input -->
         <div class="row row-head">
           <div class="input-group">
-            <input id="search" type="text" class="form-control">
+            <input id="search" type="text" class="form-control textoresponsive">
             <span class="input-group-addon">
-              <i class="fa fa-search"></i>
+              <i class="tamañoiconobuscador fa fa-search"></i>
 
             </span>
 
@@ -53,37 +53,45 @@
         <div class="row row-head">
           <ul class="nav nav-tabs" role="tablist" id="twitchTabs">
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#all">ALL <p
+              <a class="nav-link tamañonavbarra" data-toggle="tab" href="#all">
+                <p>ALL</p> <p
                   id="contador"></p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#online">ONLINE
+              <a class="nav-link active tamañonavbarra" data-toggle="tab"
+                href="#online"> <p>ONLINE</p>
                 <p
                   id="contadorONLINE"></p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#offline">OFFLINE <p
-                  id="contadorOFFLINE"></p></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#newupdates">New
-                updates
+              <a class="nav-link tamañonavbarra" data-toggle="tab"
+                href="#offline"><p>OFFLINE</p>
                 <p
                   id="contadorOFFLINE"></p></a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link tamañonavbarra" data-toggle="tab"
+                href="#newupdates"><p
+                  class="newupdatesmargen">New
+                  updates</p>
+              </a>
+            </li>
+
           </ul>
-          <div class="row row-entrante">
+          <li class="nav-item solotabs">
+
+            <a class="nav-link disabled tamañonavbarra" href=""> <p
+                class="centrarltemporizador" id="demo"> </p> </a>
+
+          </li>
+          <!--
+          <div class="row row-entrante oculto">
             <img
               src="./AnimEVO_no_waifu.png"
               alt="Twitch.tv logo">
 
           </div>
-          <li class="nav-item solotabs">
-
-            <a class="nav-link disabled" id="demo" href=""> </a>
-
-          </li>
-
+          -->
         </div> <!-- end Nav tabs -->
 
 
@@ -106,16 +114,16 @@
               <h5>Apartado donde indicaremos nuevas propuestas nuevos updates de
                 la web</h5>
               <ol>
-                <li>Ordenacion de los nombres elementos</li>
-                <li>Aplicacion para movil</li>
-                <li>Crear form para guardar los usuarios en una BD</li>
-                <li>Migrar Proyecto</li>
-                <li> Sugerencias Twitter</li>
+                <li><p>Ordenacion de los nombres elementos</p></li>
+                <li><p>Aplicacion para movil</p></li>
+                <li><p>Crear form para guardar los usuarios en una BD</p></li>
+                <li><p>Migrar Proyecto</p></li>
+                <li> <p>Sugerencias Twitter</p></li>
               </ol>
 
 
               <div class="centrarelemento">
-                <h4>Extension para Opera o Chrome</h4>
+                <h4 class="margenestitulo">Extension para Opera o Chrome</h4>
                 <video class="afterglow pruebavideonuevo videocentrado"
                   id="myvideo"
                   width="640" height="480">
@@ -125,8 +133,8 @@
               <div style="text-align:center;">
                 <a href="./FGCStreamEX.zip" target="_blank" download="Extension
                   Opera">
-                  <i class="fas fa-download"></i>
-                  Descargar Archivo
+
+                  <p> <i class="fas fa-download"></i>Descargar Archivo</p>
                 </a>
 
 
